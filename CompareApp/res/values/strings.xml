@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   
+    <string name="app_name">Compare</string>
+	
+    <string name="camera_text">Camera</string>
+    <string name="gallery_text">Gallery</string>
+    
+    <string name="exit_btn_text">Exit</string>
+    
+    <string name="yes_btn">Yes</string>
+    <string name="no_btn">No</string>
+    
+    <string name="share_btn">Share</string>
+    <string name="save_btn">Save</string>
+    
+    
+    <string name="rate_us_text">Rate us on Android market</string>
+    <string name="unsaved_changes_text">Unsaved Changes Will Be Lost</string>
+    <string name="continue_btn">Continue</string>
+    <string name="cancel_btn">Cancel</string>
+    <string name="save_img_text">Saving Image</string>
+    <string name="save_img_as_text">Save Image as</string>
+    <string name="tap_to_capture_text">Tap to capture</string>
+    
+   <!--  menu items string -->
+   <string name="menu_color">Color</string>
+   <string name="menu_emboss">Emboss</string>
+   <string name="menu_blur">Blur</string>
+   <string name="menu_reset">Reset</string>
+   
+</resources>

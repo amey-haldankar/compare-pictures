@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   
+    <string name="app_name">قارن</string>
+	
+    <string name="camera_text">كاميرا</string>
+    <string name="gallery_text">رواق</string>
+    
+    <string name="exit_btn_text">خروج</string>
+    
+    <string name="yes_btn">نعم</string>
+    <string name="no_btn">لا</string>
+    
+    <string name="share_btn">حصة</string>
+    <string name="save_btn">حفظ</string>
+    <string name="tap_to_capture_text">انقرلالتقاط</string>
+    
+    <string name="rate_us_text">معدللنافيالروبوتسوق</string>
+    <string name="unsaved_changes_text">غير محفوظة التغييرات سوف يكون ضائع</string>
+    <string name="continue_btn">استمر</string>
+    <string name="cancel_btn">إلغاء</string>
+    <string name="save_img_text">إنقاذ صورة</string>
+    <string name="save_img_as_text">حفظ الصورة حسب</string>
+    
+    <!--  menu items string -->
+   <string name="menu_color">اللون</string>
+   <string name="menu_emboss">زخرف</string>
+   <string name="menu_blur">شىء ضبابي</string>
+   <string name="menu_reset">إعادة تعيين</string>
+    
+</resources>

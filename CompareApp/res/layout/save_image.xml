@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" xmlns:tools="http://schemas.android.com/tools">
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:singleLine="true"
+        android:maxLength="40"
+        tools:ignore="TextFields" >
+
+        <requestFocus />
+    </EditText>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent" >
+
+            <Button
+                android:id="@+id/buttonYes"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/yes_btn" />
+
+            <Button
+                android:id="@+id/buttonNo"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/no_btn" />
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

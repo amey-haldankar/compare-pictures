@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialogRel"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical" xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/cameraRel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_gravity="center" >
+
+        <ImageView
+            android:id="@+id/cameraImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/camera"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/cameraText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/cameraImage"
+            android:text="@string/camera_text"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#000000"/>
+    <RelativeLayout
+        android:id="@+id/galleryRel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_gravity="center" >
+
+        <ImageView
+            android:id="@+id/galleryImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cameraImage"
+            android:src="@drawable/gallerynew" />
+
+        <TextView
+            android:id="@+id/galleryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/galleryImage"
+            android:text="@string/gallery_text"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    
+
+</LinearLayout>

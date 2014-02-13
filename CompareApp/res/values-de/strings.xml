@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   
+    <string name="app_name">vergleichen</string>
+	
+    <string name="camera_text">Kamera</string>
+    <string name="gallery_text">Galerie</string>
+    
+    <string name="exit_btn_text">verlassen</string>
+    
+    <string name="yes_btn">ja</string>
+    <string name="no_btn">nicht</string>
+    
+    <string name="share_btn">Aktie</string>
+    <string name="save_btn">sparen</string>
+    
+    <string name="rate_us_text">Bewerten Sie uns auf Androide Markt</string>
+    <string name="unsaved_changes_text">gespeicherte Änderungen wird verloren</string>
+    <string name="continue_btn">fortsetzen</string>
+    <string name="cancel_btn">kündigen</string>
+    <string name="save_img_text">Speichern von Bild-</string>
+    
+    <string name="save_img_as_text">Bild speichern unter</string>
+    <string name="tap_to_capture_text">Tippen zu erfassen</string>
+    
+    
+    <!--  menu items string -->
+   <string name="menu_color">Farbe</string>
+   <string name="menu_emboss">prägen</string>
+   <string name="menu_blur">verwischen</string>
+   <string name="menu_reset">rücksetzen</string>
+</resources>

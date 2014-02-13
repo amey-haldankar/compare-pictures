@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ContentDescription" severity="ignore" />
+    <issue id="HardcodedText" severity="ignore" />
+    <issue id="IconDensities" severity="ignore" />
+    <issue id="IconDipSize">
+        <ignore path="res/drawable-hdpi/camera..png" />
+        <ignore path="res/drawable-hdpi/gallerynew.png" />
+    </issue>
+    <issue id="IconDuplicates" severity="ignore" />
+    <issue id="Registered" severity="ignore" />
+    <issue id="UseSparseArrays" severity="ignore" />
+</lint>

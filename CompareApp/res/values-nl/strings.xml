@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   
+    <string name="app_name">vergelijken</string>
+	
+    <string name="camera_text">camera</string>
+    <string name="gallery_text">galerij</string>
+    
+    <string name="exit_btn_text">uitgang</string>
+    
+    <string name="yes_btn">ja</string>
+    <string name="no_btn">geen</string>
+    
+    <string name="share_btn">aandeel</string>
+    <string name="save_btn">besparen</string>
+    
+    <string name="rate_us_text">beoordelen ons op android markt</string>
+    <string name="unsaved_changes_text">opgeslagen wijzigingen verloren</string>
+    <string name="continue_btn">voortzetten</string>
+    <string name="cancel_btn">annuleren</string>
+    <string name="save_img_text">het opslaan van afbeeldingsgegevens</string>
+    <string name="save_img_as_text">afbeelding opslaan als</string>
+    <string name="tap_to_capture_text">tik op om vast te leggen</string>
+    
+    
+    <!--  menu items string -->
+   <string name="menu_color">kleur</string>
+   <string name="menu_emboss">in reliëf maken</string>
+   <string name="menu_blur">vervagen</string>
+   <string name="menu_reset">opnieuw in te stellen</string>
+</resources>

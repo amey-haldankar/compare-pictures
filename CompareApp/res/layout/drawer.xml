@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:layout_gravity="right"
+    android:background="#cc0000" >
+
+    <ImageView
+        android:id="@+id/screenshot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="25dp"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:onClick="onSnapShot"
+        android:background="@drawable/snapshot_selector"
+        />
+
+    <ImageView
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="25dp"
+        android:layout_toRightOf="@id/screenshot"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:onClick="resetLayout"
+        android:background="@drawable/refresh_selector" />
+
+    <ImageView
+        android:id="@+id/rateUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/reset"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:onClick="rateUS"
+        android:background="@drawable/rating_selector" />
+
+<!--     <Button
+        android:id="@+id/shareBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/settings_selector"
+        android:onClick="getDrawer" />
+ -->
+</RelativeLayout>

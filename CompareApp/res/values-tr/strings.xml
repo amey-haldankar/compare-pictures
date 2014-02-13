@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   
+    <string name="app_name">karşılaştırmak</string>
+	
+    <string name="camera_text">kamera</string>
+    <string name="gallery_text">galeri</string>
+    
+    <string name="exit_btn_text">çıkmak</string>
+    
+    <string name="yes_btn">evet</string>
+    <string name="no_btn">hayır</string>
+    
+    <string name="share_btn">hisse</string>
+    <string name="save_btn">kurtarmak</string>
+    
+    <string name="rate_us_text">değerlendirirsiniz Bizi android pazar</string>
+    <string name="unsaved_changes_text">kaydedilmemiş değişiklikler kaybolacak</string>
+    <string name="continue_btn">devam etmek</string>
+    <string name="cancel_btn">iptal</string>
+    <string name="save_img_text">kaydetme görüntü</string>
+    <string name="save_img_as_text">görüntü kaydetmek olarak</string>
+    <string name="tap_to_capture_text">dokunun yakalamak için</string>
+    
+    
+    <!--  menu items string -->
+   <string name="menu_color">renk</string>
+   <string name="menu_emboss">kabartma yapmak</string>
+   <string name="menu_blur">bulanıklık</string>
+   <string name="menu_reset">ayarlamak</string>
+</resources>
