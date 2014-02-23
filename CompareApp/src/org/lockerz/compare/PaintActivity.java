@@ -38,7 +38,7 @@ import android.widget.EditText;
 import android.widget.RelativeLayout;
 
 public class PaintActivity extends FirstRun implements
-ColorPickerDialog.OnColorChangedListener {
+		ColorPickerDialog.OnColorChangedListener {
 
 	private Paint mPaint;
 	private MaskFilter mEmboss;
@@ -160,15 +160,10 @@ ColorPickerDialog.OnColorChangedListener {
 		protected void onSizeChanged(int w, int h, int oldw, int oldh) {
 			super.onSizeChanged(w, h, oldw, oldh);
 
-			/*
-			 * mBitmap = Bitmap.createScaledBitmap(mBackBitmap, mBackBitmap
-			 * .getWidth(), mBackBitmap.getHeight(), true); mutableBitmap =
-			 * mBitmap.copy(Bitmap.Config.ARGB_8888, true);
-			 * 
-			 * mCanvas = new Canvas(mutableBitmap);
-			 */
-			mBitmap = mBackBitmap.copy(mBackBitmap.getConfig(), true);
-			mCanvas = new Canvas(mBitmap);
+			if (mBackBitmap != null) {
+				mBitmap = mBackBitmap.copy(mBackBitmap.getConfig(), true);
+				mCanvas = new Canvas(mBitmap);
+			}
 		}
 
 		@Override
@@ -333,12 +328,12 @@ ColorPickerDialog.OnColorChangedListener {
 		super.onCreateOptionsMenu(menu);
 
 		menu.add(0, COLOR_MENU_ID, 0, R.string.menu_color)
-		.setShortcut('3', 'c');
+				.setShortcut('3', 'c');
 		menu.add(0, EMBOSS_MENU_ID, 0, R.string.menu_emboss).setShortcut('4',
 				's');
 		menu.add(0, BLUR_MENU_ID, 0, R.string.menu_blur).setShortcut('5', 'z');
 		menu.add(0, RESET_MENU_ID, 0, R.string.menu_reset)
-		.setShortcut('5', 'z');
+				.setShortcut('5', 'z');
 		// menu.add(0, ERASE_MENU_ID, 0, "Erase").setShortcut('5', 'z');
 		// menu.add(0, SRCATOP_MENU_ID, 0, "SrcATop").setShortcut('5', 'z');
 
@@ -415,55 +410,56 @@ ColorPickerDialog.OnColorChangedListener {
 		AlertDialog.Builder alertbox = new AlertDialog.Builder(
 				PaintActivity.this);
 		//
-		View view = View.inflate(PaintActivity.this,R.layout.alert_box_layout, null);
+		View view = View.inflate(PaintActivity.this, R.layout.alert_box_layout,
+				null);
 
 		alertbox.setView(view);
 
-		alertbox.setMessage(R.string.unsaved_changes_text); // Message to be displayed.
-		
-		Button continueBtn = (Button)view.findViewById(R.id.contBtn);
-		Button cancelBtn = (Button)view.findViewById(R.id.cancelBtn);
-		
+		alertbox.setMessage(R.string.unsaved_changes_text); // Message to be
+															// displayed.
+
+		Button continueBtn = (Button) view.findViewById(R.id.contBtn);
+		Button cancelBtn = (Button) view.findViewById(R.id.cancelBtn);
+
 		continueBtn.setOnClickListener(new OnClickListener() {
-			
+
 			@Override
 			public void onClick(View v) {
-			
+
 				PaintActivity.super.onBackPressed();
 			}
 		});
-		
+
 		cancelBtn.setOnClickListener(new OnClickListener() {
-			
+
 			@Override
 			public void onClick(View v) {
-				
+
 				finish();
 			}
 		});
 
-		/*alertbox.setPositiveButton(R.string.continue_btn,
-				new DialogInterface.OnClickListener() {
-
-					@Override
-					public void onClick(DialogInterface dialog, int which) {
-						// TODO Auto-generated method stub
-
-						PaintActivity.super.onBackPressed();
-					}
-
-				});
-
-		alertbox.setNegativeButton(R.string.cancel_btn,
-				new DialogInterface.OnClickListener() {
-
-					@Override
-					public void onClick(DialogInterface dialog, int which) {
-						// TODO Auto-generated method stub
-
-					}
-
-				});*/
+		/*
+		 * alertbox.setPositiveButton(R.string.continue_btn, new
+		 * DialogInterface.OnClickListener() {
+		 * 
+		 * @Override public void onClick(DialogInterface dialog, int which) { //
+		 * TODO Auto-generated method stub
+		 * 
+		 * PaintActivity.super.onBackPressed(); }
+		 * 
+		 * });
+		 * 
+		 * alertbox.setNegativeButton(R.string.cancel_btn, new
+		 * DialogInterface.OnClickListener() {
+		 * 
+		 * @Override public void onClick(DialogInterface dialog, int which) { //
+		 * TODO Auto-generated method stub
+		 * 
+		 * }
+		 * 
+		 * });
+		 */
 
 		// show the alert box will be swapped by other code later
 		alertbox.show();
@@ -481,7 +477,7 @@ ColorPickerDialog.OnColorChangedListener {
 		dialog.setContentView(R.layout.save_image);
 		dialog.setTitle(R.string.save_img_as_text);
 		String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss")
-		.format(new Date());
+				.format(new Date());
 
 		// dialog.setTitle(R.string.save_img_as_text);
 		filEdit = (EditText) dialog.findViewById(R.id.editText1);

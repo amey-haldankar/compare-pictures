@@ -15,57 +15,45 @@
             android:layout_width="wrap_content"
             android:layout_height="50dp" />
 
-            <ImageView
-                android:id="@+id/homeLogoD"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginLeft="-30dp"
-                android:onClick="launchHome"
-                android:src="@drawable/home" />
+        <ImageView
+            android:id="@+id/homeLogoD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="-30dp"
+            android:onClick="launchHome"
+            android:src="@drawable/home" />
 
-            <Button
-                android:id="@+id/shareBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="10dp"
-                android:background="@drawable/settings_selector"
-                android:onClick="getDrawer" />
-
-            <TextView
-                android:id="@+id/title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/shareBtn"
-                android:layout_alignParentLeft="true"
-                android:layout_marginLeft="70dp"
-                android:text="@string/app_name"
-                android:textColor="#f8f8f8"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <!--
-             <Button
+        <Button
             android:id="@+id/shareBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
             android:background="@drawable/settings_selector"
-            android:onClick="getDrawer" />
-            -->
+            android:onClick="getDrawer" />
 
-        </RelativeLayout>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/shareBtn"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="70dp"
+            android:text="@string/app_name"
+            android:textColor="#f8f8f8"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
 
-        <LinearLayout
-            android:id="@+id/root"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:background="#cc0000"
-            android:orientation="vertical" >
-        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/root"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#cc0000" 
+        android:orientation="vertical">
+    </LinearLayout>
 
 </LinearLayout>
